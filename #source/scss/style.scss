@@ -244,6 +244,9 @@ a {
         font-size: rem(50);
         line-height: rem(50);
     }
+    @media (max-width: $mobile) {
+        font-size: rem(45);
+    }
 }
 
 .main-block {
@@ -408,6 +411,9 @@ a {
     @media (max-width: $tablet) {
         margin-bottom: rem(120);
     }
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+    }
 }
 
 .how {
@@ -475,6 +481,10 @@ a {
                 padding: rem(20);
             }
         }
+        @media (max-width: $mobile) {
+            padding: 0 rem(25);
+            margin-top: rem(30);
+        }
     }
 }
 
@@ -513,6 +523,9 @@ a {
     @media (max-width: $tablet) {
         margin-bottom: rem(120);
     }
+    @media (max-width: $mobile) {
+        flex-wrap: wrap-reverse;
+    }
 }
 
 .future {
@@ -540,10 +553,18 @@ a {
         &:before {
             top: rem(300);
             left: rem(-200);
+            @media (max-width: $mobile) {
+                top: rem(150);
+                left: rem(-100);
+            }
         }
         &:after {
             top: rem(250);
             left: rem(-220);
+            @media (max-width: $mobile) {
+                top: rem(125);
+                left: rem(-110);
+            }
         }
 
         img {
@@ -555,11 +576,16 @@ a {
                 padding: rem(20);
             }
         }
+        @media (max-width: $mobile) {
+            padding: 0 rem(25);
+            margin-top: rem(30);
+        }
     }
     &-content {
         max-width: rem(520);
         @media (max-width: $tablet) {
             max-width: rem(400);
+            margin: 0 rem(40);
         }
     }
 }
@@ -596,6 +622,9 @@ a {
     @media (max-width: $tablet) {
         margin-bottom: rem(120);
     }
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+    }
 }
 
 .whychoose {
@@ -627,6 +656,13 @@ a {
         justify-content: center;
         margin-right: rem(20);
     }
+    &-button {
+        margin-bottom: rem(20);
+        @media (max-width: $mobile) {
+            display: flex;
+            justify-content: center;
+        }
+    }
     &-image {
         img {
             z-index: 10;
@@ -642,16 +678,25 @@ a {
 .customers {
     &-title {
         text-align: center;
+        @media (max-width: $mobile) {
+            margin: 0 rem(40);
+        }
     }
     &-title-text {
         max-width: rem(500);
         text-align: center;
         padding: rem(40);
         margin: 0 auto;
+        @media (max-width: $mobile) {
+            padding: rem(20);
+        }
     }
     &-content {
         display: flex;
         justify-content: space-around;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
     }
     &-item {
         position: relative;
@@ -674,6 +719,9 @@ a {
         @media (max-width: $tablet) {
             max-width: rem(380);
         }
+        @media (max-width: $mobile) {
+            margin: rem(20);
+        }
     }
     &-image {
         img {
@@ -687,6 +735,9 @@ a {
         display: block;
         padding: rem(18) rem(50);
         margin: rem(40) auto;
+        @media (max-width: $mobile) {
+            margin: rem(20) auto;
+        }
     }
 }
 
@@ -722,6 +773,9 @@ a {
             @media (max-width: $tablet) {
                 padding: 0 rem(10);
             }
+            @media (max-width: $mobile) {
+                margin: rem(5);
+            }
         }
         &:before,
         &:after {
@@ -732,8 +786,8 @@ a {
         width: rem(700);
         height: rem(700);
         @media (max-width: $mobile) {
-            width: rem(500);
-            height: rem(500);
+            width: rem(550);
+            height: rem(550);
         }
         }
         &:before {
@@ -741,12 +795,18 @@ a {
             @media (max-width: $tablet) {
                 top: rem(-250);
             }
+            @media (max-width: $mobile) {
+                top: rem(-300);
+            }
         }
         &:after {
             top: rem(-450);
             @media (max-width: $tablet) {
                 top: rem(-320);
             }
+        }
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
         }
     }
 }
@@ -776,6 +836,11 @@ a {
     &-mid-text {
         max-width: rem(400);
         padding-bottom: rem(20);
+    }
+    &-form {
+        @media (max-width: $mobile) {
+            margin: 0;
+        }
     }
     &-input {
         min-width: rem(300);
@@ -815,7 +880,15 @@ a {
     }
 }
 
+.footer-copyright {
+    @media (max-width: $mobile) {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 .footer-list {
+    position: relative;
     border-top: 1px solid #fff;
     display: flex;
     justify-content: space-between;
@@ -832,6 +905,9 @@ a {
         a:hover {
             color: $greenColor;
             transition: color 0.3s ease 0s;
+        }
+        @media (max-width: $mobile) {
+            flex-direction: column;
         }
     }
 }
