@@ -474,7 +474,7 @@ a {
 }
 @media (max-width: 991.98px) {
   .how-content {
-    max-width: 21.875rem;
+    max-width: 23.75rem;
   }
 }
 .how-title {
@@ -555,7 +555,7 @@ a {
 }
 @media (max-width: 767.98px) {
   .how-image {
-    padding: 0 1.5625rem;
+    padding: 0 1.25rem;
     margin-top: 1.875rem;
   }
 }
@@ -687,8 +687,8 @@ a {
 }
 @media (max-width: 991.98px) {
   .future-content {
-    max-width: 25rem;
-    margin: 0 2.5rem;
+    max-width: 23.75rem;
+    margin: 0 1.25rem;
   }
 }
 
@@ -741,7 +741,7 @@ a {
 }
 @media (max-width: 991.98px) {
   .whychoose-content {
-    max-width: 18.75rem;
+    max-width: 23.75rem;
   }
 }
 .whychoose-item {
@@ -753,6 +753,11 @@ a {
 @media (max-width: 991.98px) {
   .whychoose-item {
     margin: 0.9375rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .whychoose-item {
+    margin: 0.9375rem 3.125rem;
   }
 }
 .whychoose-item-text {
@@ -893,8 +898,8 @@ a {
 }
 @media (max-width: 991.98px) {
   .page-download {
-    padding: 3.125rem;
-    margin: 7.5rem 3.125rem;
+    padding: 6.25rem 1.25rem;
+    margin: 7.5rem 1.25rem;
   }
 }
 
@@ -965,7 +970,7 @@ a {
 }
 @media (max-width: 991.98px) {
   .download-links:after {
-    top: -20rem;
+    top: -21.25rem;
   }
 }
 @media (max-width: 767.98px) {
