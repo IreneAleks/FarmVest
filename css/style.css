@@ -28,7 +28,6 @@ a {
 }
 
 .header {
-  border-bottom: 1px solid #fff;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -41,8 +40,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.25rem 0.9375rem;
+  padding: 3.75rem 3.75rem;
   margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header-logo img {
   position: relative;
@@ -81,6 +82,22 @@ a {
 }
 @media (max-width: 767.98px) {
   .header {
+    padding: 1.25rem 1.875rem;
+  }
+}
+
+.header-scroll {
+  background-color: rgba(26, 31, 34, 0.9411764706);
+  max-width: 100%;
+  padding: 1.25rem 3.75rem;
+}
+@media (max-width: 991.98px) {
+  .header-scroll {
+    padding: 1.875rem 1.875rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .header-scroll {
     padding: 1.25rem 1.875rem;
   }
 }
@@ -707,13 +724,26 @@ a {
   right: 0.9375rem;
   background: none;
 }
-.future-accordion-text {
+@media (max-width: 991.98px) {
+  .future-accordion-button {
+    top: 1.25rem;
+  }
+}
+.future-accordion-title {
   padding: 1.875rem;
 }
 @media (max-width: 991.98px) {
-  .future-accordion-text {
+  .future-accordion-title {
     padding: 1.25rem;
   }
+}
+.future-accordion-content {
+  max-height: 0px;
+  overflow: hidden;
+  font-size: 1.125rem;
+  padding: 0rem 1.25rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .page-whychoose {
