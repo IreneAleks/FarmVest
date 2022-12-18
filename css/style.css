@@ -561,20 +561,21 @@ a {
 }
 .how-image img {
   position: relative;
-  top: 25rem;
+  top: 350px;
   z-index: 10;
   max-width: 31.25rem;
   padding: 1.875rem;
 }
 @media (max-width: 991.98px) {
   .how-image img {
+    top: 400px;
     max-width: 21.875rem;
     padding: 1.25rem;
   }
 }
 @media (max-width: 767.98px) {
   .how-image img {
-    top: 35.625rem;
+    top: 500px;
   }
 }
 @media (max-width: 767.98px) {
@@ -691,14 +692,14 @@ a {
 }
 .future-image img {
   position: relative;
-  top: 45.3125rem;
+  top: 650px;
   z-index: 10;
   max-width: 31.25rem;
   padding: 1.875rem;
 }
 @media (max-width: 991.98px) {
   .future-image img {
-    top: 43.75rem;
+    top: 800px;
     max-width: 21.875rem;
     padding: 1.25rem;
   }
@@ -841,7 +842,7 @@ a {
 }
 .whychoose-image img {
   position: relative;
-  top: 43.75rem;
+  top: 600px;
   z-index: 10;
   max-width: 35rem;
 }
