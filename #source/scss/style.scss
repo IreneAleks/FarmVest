@@ -58,8 +58,6 @@ a {
 
 // HEADER ----------------------------------
 .header {
-    border-bottom: 1px solid #fff;
-    
     position: fixed;
     z-index: 100;
     top: 0;
@@ -68,9 +66,9 @@ a {
     width: 100%;
     display: flex;
     align-items: center;
-    // padding: rem(60) rem(15);
-    padding: rem(20) rem(15);
+    padding: rem(60) rem(60);
     margin: 0 auto;
+    transition: all 0.3s ease-in-out;
     &-logo img {
         position: relative;
         z-index: 5;
@@ -99,6 +97,18 @@ a {
     }
 }
 
+.header-scroll {
+    background-color: #1a1f22f0;
+    max-width: 100%;
+    padding: rem(20) rem(60);
+    @media (max-width: $tablet) {
+        padding: rem(30) rem(30);
+    }
+    @media (max-width: $mobile) {
+        padding: rem(20) rem(30);
+    }
+}
+ 
 .menu {
     &-body {
         @media (max-width: $mobile) {
@@ -605,14 +615,26 @@ a {
         top: rem(30);
         right: rem(15);
         background: none;
+        @media (max-width: $tablet) {
+            top: rem(20);
+        }
     }
-    &-text {
+    &-title {
         padding: rem(30);
         @media (max-width: $tablet) {
             padding: rem(20);
         }
     }
+    &-content {
+        max-height: 0px;
+        overflow: hidden;
+        font-size: rem(18);
+        padding: rem(0) rem(20);
+        transition: all 0.3s ease-in-out;
+    }
 }
+
+
 
 // Why choose -------------------------------------------
 .page-whychoose {
