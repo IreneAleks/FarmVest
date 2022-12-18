@@ -560,6 +560,8 @@ a {
   }
 }
 .how-image img {
+  position: relative;
+  top: 25rem;
   z-index: 10;
   max-width: 31.25rem;
   padding: 1.875rem;
@@ -683,6 +685,8 @@ a {
   }
 }
 .future-image img {
+  position: relative;
+  top: 45.3125rem;
   z-index: 10;
   max-width: 31.25rem;
   padding: 1.875rem;
@@ -825,6 +829,8 @@ a {
   }
 }
 .whychoose-image img {
+  position: relative;
+  top: 43.75rem;
   z-index: 10;
   max-width: 35rem;
 }
