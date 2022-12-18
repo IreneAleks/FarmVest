@@ -573,6 +573,11 @@ a {
   }
 }
 @media (max-width: 767.98px) {
+  .how-image img {
+    top: 35.625rem;
+  }
+}
+@media (max-width: 767.98px) {
   .how-image {
     padding: 0 1.25rem;
     margin-top: 1.875rem;
@@ -693,8 +698,14 @@ a {
 }
 @media (max-width: 991.98px) {
   .future-image img {
+    top: 43.75rem;
     max-width: 21.875rem;
     padding: 1.25rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .future-image img {
+    top: 53.125rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -836,7 +847,13 @@ a {
 }
 @media (max-width: 991.98px) {
   .whychoose-image img {
+    top: 34.375rem;
     max-width: 23.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .whychoose-image img {
+    top: 62.5rem;
   }
 }
 
