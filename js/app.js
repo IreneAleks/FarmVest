@@ -63,3 +63,20 @@ document.querySelectorAll('.future-accordion-button').forEach((el) => {
         }
     });
 });
+
+
+// Паралакс
+new Rellax('.rellax');
+
+new Parallax(document.getElementById('scene1'));
+new Parallax(document.getElementById('scene2'));
+new Parallax(document.getElementById('scene3'));
+new Parallax(document.getElementById('scene4'));
+new Parallax(document.getElementById('scene5'));
+new Parallax(document.getElementById('scene6'));
+new Parallax(document.getElementById('scene7'));
+
+
+
+
+
