@@ -9,7 +9,7 @@ if (burgerMenu) {
     });
 }
 
-// Прокрутка
+// Скрол 
 const menuLinks = document.querySelectorAll('.menu-link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
@@ -36,3 +36,30 @@ if (menuLinks.length > 0) {
         }
     }
 }
+
+// Зміна меню при скролі
+window.addEventListener('scroll', e => {
+    let header = document.getElementById('header').classList;
+    let activeClass = "header-scroll";
+
+    if (pageYOffset > 100) {
+        header.add(activeClass);
+    } else {
+        header.remove(activeClass);
+    }
+});
+
+
+// Акордеон 
+document.querySelectorAll('.future-accordion-button').forEach((el) => {
+    el.addEventListener('click', () => {
+        let  accordionContent = el.nextElementSibling;
+
+        if (accordionContent.style.maxHeight) {
+            document.querySelectorAll('.future-accordion-content').forEach((el) => el.style.maxHeight = null)
+        } else {
+            document.querySelectorAll('.future-accordion-content').forEach((el) => el.style.maxHeight = null)
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+        }
+    });
+});
